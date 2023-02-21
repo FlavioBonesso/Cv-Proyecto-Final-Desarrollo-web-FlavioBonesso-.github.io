@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Poppins, sans-serif;
+}
+
+body{
+    background-color: rgb(93, 182, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+body.dark
+{
+    background-color: #2f2e2e;
+    transition: .3s ease all;
+}
+
+.container
+{
+  
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: white;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+.container .lado-izquierdo
+{
+    background: #003147;
+    position: relative;
+    padding: 40px;
+   
+}
+
+body.dark .lado-izquierdo
+{
+    background: #6e6e6e;
+    transition: .3s ease all;
+    box-shadow: 0px 20px 10px 10px rgba(1, 1, 1, 0.3);
+}
+
+.Perfil
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 4px solid rgba(67, 72, 77, 0.5);
+    color: white;
+    border-top: 4px solid rgba(67, 72, 77, 0.5); 
+    box-shadow: 0 35px 55px rgba(1, 1, 1, 0.3);
+   
+ } 
+
+ body.dark .Perfil
+ {
+    border-bottom: 4px solid rgba(4, 4, 4, 0.5);
+    border-top: 4px solid rgba(4, 4, 4, 0.5); 
+    color: black;
+    box-shadow: 0px 20px 10px 10px rgba(1, 1, 1, 0.3);
+ }
+
+ .Perfil .FotoPerfil
+ {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: solid 4px rgba(67, 72, 77, 0.5);
+    border-radius: 50%; 
+    overflow: hidden;
+ }
+ body.dark .FotoPerfil
+ {
+    border: solid 4px rgba(4, 4, 4, 0.5);
+ }
+
+ .Perfil .FotoPerfil img
+ {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+ }
+   
+
+ .Perfil h2 span 
+ {
+    font-size: 0.8em;
+    font-weight: 300;
+    color: white;
+ }
+
+ body.dark h2 span 
+{
+    color: black;
+}
+ .InformaciónContacto 
+ {
+    padding-top: 40px;
+ }
+
+ .titulo 
+ {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+ }
+
+body.dark .titulo 
+{
+    color: black;
+}
+
+ .container .lado-izquierdo .titulo
+ {
+    border-bottom: 4px solid rgba(67, 72, 77, 0.5);
+    box-shadow: 0 17px 22px rgba(1, 1, 1, 0.3);
+ }
+
+ body.dark .container .lado-izquierdo .titulo
+ {
+    border-bottom: 4px solid rgba(4, 4, 4, 0.5);
+ }
+ 
+ .InformaciónContacto ul 
+ {
+    position: relative;
+ }
+
+ .InformaciónContacto ul li 
+ {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;    
+}
+
+.InformaciónContacto ul li .icon 
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 15px;
+    color:#03a9f4;
+}
+
+
+
+.InformaciónContacto ul li span
+{
+    color: white;
+    font-weight: 300;
+}
+
+a
+{
+    text-decoration: none;
+}
+    
+body.dark .InformaciónContacto ul li span
+{
+    color: black;
+}
+
+body.dark .InformaciónContacto ul li span.icon
+{
+    color:  #0293d5;
+}
+.text
+{
+    cursor: pointer;
+}
+
+.InformaciónContacto.Educación li
+{
+    margin-bottom: 15px;
+    box-shadow: 0 17px 22px rgba(1, 1, 1, 0.3);
+
+}
+
+.InformaciónContacto.Educación ul li
+{
+    list-style: none;
+}
+
+.InformaciónContacto.Educación h5
+{
+    color: #03a9f4;
+    font-weight: 500;
+    font-size: 0.9em;
+    
+    
+}
+
+body.dark .InformaciónContacto.Educación h5
+{
+    color:  #0293d5;
+    font-weight: 600;
+    
+    
+}
+
+.InformaciónContacto.Educación h4:nth-child(2)
+{
+    color: white;
+    font-weight: 6  00;
+    font-size: 0.9em;
+    box-shadow: 0 35px 55px rgba(1, 1, 1, 0.3);
+}
+
+body.dark .InformaciónContacto.Educación h4:nth-child(2)
+{
+    color: black;
+    font-weight: 700;
+}
+
+.InformaciónContacto.Educación h4
+{
+    color: white;
+    font-weight:300;
+    font-size :0.8em;
+}
+
+body.dark .InformaciónContacto.Educación h4
+{
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size :0.83em;
+}
+
+.InformaciónContacto.Idioma .porcentaje
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background:#081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.InformaciónContacto.Idioma .porcentaje div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+body.dark .InformaciónContacto.Idioma .porcentaje div
+{
+    background: #0293d5;
+}
+
+/*-----------------------------------------------------------------------*/
+
+
+.container .lado-derecho
+{
+    background: white;
+    position: relative;
+    padding: 40px;
+}
+
+body.dark .container .lado-derecho
+{
+    background: rgb(8, 6, 6);
+    transition: .3s ease all;
+}
+
+.about 
+{
+    margin-bottom: 10px;
+}
+
+
+.titulo2 
+{
+    color: #003147;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+body.dark .titulo2 
+{
+    color: white;
+}
+
+li
+{
+    color: black;
+
+}
+
+body.dark p
+{
+    color: white;
+}
+
+body.dark li
+{
+    color: white;
+}
+
+
+.about .box
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .año_compañia
+{
+    min-width: 150px;
+}
+
+.about .box .año_compañia h5
+{
+    color: #848c90;
+    font-weight: 600;
+    max-width: 150px;
+}
+
+body.dark .about .box .año_compañia h5
+{
+    color: #707070;
+}
+
+.about .box .año_compañia h5:last-child
+{
+    text-transform:uppercase; 
+}
+.about .box .text h4 
+{
+    text-transform:uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+    cursor: default;
+   
+}
+
+
+body.dark .about .box .text h4 
+{
+    color: #0293d5;
+
+}
+
+.boton_vermás
+{
+    background-color:#a4a3a3;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 1px 4px;
+    font-size: 0.7em;
+    box-shadow: 0px 0px 10px 0px #027bb3;
+    transition: .3s ease all;
+    cursor: pointer;
+}
+
+.boton_vermás:hover
+{
+    box-shadow: 0px 0px 10px 0px #000000;
+    background-color: #03a9f4;
+    color: black;
+    font-weight: 700;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 3s;
+}
+
+body.dark .boton_vermás:hover
+{
+    box-shadow: 0px 0px 10px 0px #fafafa;
+}
+
+
+.esconder
+{
+    display:none;
+}
+
+
+.mostrar
+{
+    display:block;
+}
+
+.habilidades .box
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.habilidades .box h4
+{
+color: #848c90;
+font-weight: 600;
+}
+
+body.dark .habilidades .box h4
+{
+    color: white;
+}
+
+.habilidades .box .porcentaje 
+{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+
+body.dark .habilidades .box .porcentaje
+{
+    background: #4a494c;
+}
+
+.habilidades .box .porcentaje div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+body.dark .habilidades .box .porcentaje div
+{
+    background: #038ac8;
+}
+
+.Intereses ul
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.Intereses ul li
+{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: auto;
+}
+
+body.dark .Intereses ul li
+{
+    color: white;
+}
+
+.Intereses ul li .fa
+{
+    color: #03a9f4;
+    font-size: 18px;
+    width: 20px;
+    margin: auto;
+    display:flex;
+    max-height: 18px;
+}
+
+body.dark .Intereses ul li .fa
+{
+    color: #0293d5;
+}
+
+
+
+
+/*----------media querries-----------------*/
+
+@media (max-width: 1000px)
+{
+    .container
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1 ,1fr);
+    }
+    
+    .Intereses ul
+    {
+        grid-template-columns: repeat(2 ,1fr);
+
+    }
+
+    .Intereses ul li
+    {
+        padding: 0px 0px 25px 0px;
+    }
+}
+
+@media (max-width: 600px)
+{
+   .about .box
+   {
+    flex-direction: column;
+   }
+   .about .box .año_compañia 
+   {
+    margin-bottom: 5px;
+   }
+   .Intereses ul
+   {
+    grid-template-columns: min-content;
+   }
+   .habilidades .box
+   {
+    grid-template-columns: repeat(1,1fr);
+   }
+}
+
+/*-------------- switch Modo oscuro------------------*/
+
+
+.switch
+{
+    background: #343D5B;
+    border-radius: 1000PX;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    margin: -36px -34px 0px 0px;
+    
+}
+
+.switch::after
+{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: white;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+    
+}
+
+.active
+{
+    background: orange;
+    color: black;
+}
+
+.active::after
+{
+    right: 0;
+    left: unset;
+}
+
+.span
+
+{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: white;
+}
+
+.tema
+{
+    float: right;
+} 
+
